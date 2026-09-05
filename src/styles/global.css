@@ -1,0 +1,110 @@
+/* Design Tokens */
+:root {
+  --ink: #141414;
+  --paper: #F5F1E6;
+  --white: #FFFFFF;
+  --primary: #0C8A3E;
+  --alert: #E8472B;
+  --warning: #e67e22;
+  --info: #2c7be5;
+  --sticker: #F4C20D;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F1E6;
+  font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #141414;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Brutalist Card */
+.brutalist-card {
+  background: #FFFFFF;
+  border: 2px solid #141414;
+  box-shadow: 3px 3px 0 #141414;
+  border-radius: 0;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.brutalist-card:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #141414;
+}
+
+/* Brutalist Button */
+.brutalist-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  background: #141414;
+  color: #FFFFFF;
+  border: 2px solid #141414;
+  box-shadow: 3px 3px 0 #141414;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  transition: all 150ms ease;
+  border-radius: 0;
+}
+
+.brutalist-btn:hover {
+  background: #0C8A3E;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #141414;
+}
+
+.brutalist-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 #141414;
+}
+
+/* Brutalist Input */
+.brutalist-input {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  background: #FFFFFF;
+  border: 2px solid #141414;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #141414;
+  outline: none;
+  transition: box-shadow 150ms ease;
+}
+
+.brutalist-input:focus {
+  box-shadow: 3px 3px 0 #141414;
+}
+
+.brutalist-input::placeholder {
+  color: rgba(20, 20, 20, 0.5);
+}
+
+/* Brutalist Divider */
+.brutalist-divider {
+  height: 2px;
+  background: #141414;
+  border: none;
+  margin: 1rem 0;
+}
